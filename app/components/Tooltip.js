@@ -29,7 +29,6 @@ export default function Tooltip({ text, children }) {
     <Hover>
       {hovering => (
         <div style={styles.container}>
-          <pre> hello hello{hovering}</pre>
           {hovering === true && <div style={styles.tooltip}>{text}</div>}
           {children}
         </div>
